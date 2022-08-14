@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+*{
+
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* set containers */
+.container{
+    width: 60vw;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+.containerCenter{
+    width: 60vw;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+    
+}
+
+/* header */
+.header-op{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.options{
+    /* background-color: aqua; */
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+
+    text-decoration: none;
+    color: white;
+
+}
+
+header{
+    width: 100%;
+    background-color: rgba(63, 62, 62, 0.534);
+    height: 5vh;
+    font-size: clamp(1px, 3vw, 20px);
+}
+
+
+/* sectiom default */
+section{
+    overflow:hidden;
+    min-height: 50vh;
+    max-height: 100%;
+    /* padding: ; */
+    width: 100%;
+    background-color: rgb(199, 140, 68);
+    /* font-size: clamp(1px, 3vw, 20px); */
+    position: relative;
+    
+    box-shadow: 0px -5px 10px 10px #000000;
+
+    
+}
+
+/* home first section */
+.myPhoto{
+
+    display: block;
+    width: 20%;
+    position: absolute;
+    right: 0px;
+    top: 20%;
+   
+
+}
+
+.home .container{
+    
+    position: relative;
+    display: block;
+    /* background-color: blueviolet; */
+    height: 100%;
+    min-height:50vh;
+}
+
+.home article{
+
+    position: absolute;
+    width: 40%;
+    top: 30%;
+    text-align: justify;
+    color: black;
+
+    padding: 2%;
+
+    border-radius: 5px;
+    background-color: white;
+    border: black solid 10px;
+    box-shadow: 0px 0px 26px 0px rgba(255,255,255,0.36);
+
+}
+
+.home{
+
+    
+    background-color: black;
+    height: 70vh;
+    
+}
+
+.flowersB{
+    position: absolute;
+    bottom: 0px;
+    filter: invert();
+}
+
+.flowersT{
+    position: absolute;
+    top: 0;
+    right: 0;
+    filter: invert();
+}
+
+
+
+
+
+/* second section */
+.sobre{
+
+    background-color: white;
+    display: flex;
+    
+
+    
+}
+
+
+
+.sobre .container{
+    /* background-color: aqua; */
+    max-height:max-content;
+    display: inline-block;
+    margin-top: 3% ;
+}
+
+.sobre article{
+
+    width: 40%;
+    padding: 5%;
+    margin-bottom: 10%;
+    float: right;
+    right: 0px;
+    text-align: justify;
+    background-color: white;
+    border: 5px solid black;
+    color: black;
+
+}
+.sobre .container{
+
+    /* margin-top: 3% ; */
+    min-height: 100%;
+    text-align: center;
+    /* position: static; */
+    color: white;
+}
+
+.about{
+
+    /* display: block; */
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translate(0,-30%);
+    width: 40%;
+    filter: grayscale(100);
+    
+}
+
+.corner{
+
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.corner:nth-child(1){
+
+    
+    position: absolute;
+    top: 0%;
+    left: 0;
+    
+}
+
+.corner:nth-child(2){
+
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 0%;
+    right: 0;
+
+}
+
+
+/* projetos */
+
+.projetos{
+
+    background-color: white;
+    
+}
+
+.card img{
+
+    /* display: block; */
+    width: 90%;
+    
+
+}
+
+.card{
+
+    
+    background-color: #000000;
+    padding: 2vw;
+    max-width: 15vw;
+    text-align: center;
+    color: white;
+    margin-top: 2vw;
+    transition: 0.5s;
+}
+
+.projetos-card a{
+
+    text-decoration: none;
+
+}
+
+.projetos-card{
+
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    gap: 2%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+}
+
+.card:hover{
+
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    transition: .5s;
+
+}
+
+
+/* footer */
+
+footer{
+
+    color: white;
+    min-height: 10vh;
+    width: 100%;
+    padding: 5vh;
+}
