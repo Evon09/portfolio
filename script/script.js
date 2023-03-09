@@ -1,6 +1,6 @@
 const write = document.querySelector("#write");
 
-const mensagens = ["Web Developer", "Front-End", "Ciencia da Computação"];
+const mensagens = ["Web Developer", "Front-End", "Ciência da Computação"];
 
 
 
