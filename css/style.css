@@ -154,7 +154,10 @@ section{
 
 #about{
 
+ 
+  
     flex-direction: column;
+    
     padding-top: 10vh;
     background-color: #191e41;
     color: white;
@@ -172,10 +175,15 @@ section{
     
 }
 
+#about .info{
+    width: auto;
+}
+
 .my-photo{
 
-    max-width: 80%;
+    max-width: 100%;
     height: auto;  
+    margin-bottom: 1rem;
 }
 
 #about .triangulo {
@@ -221,6 +229,7 @@ section{
     #about{
         flex-direction: row;
         min-height: 50vh;
+     
         padding: 0 7vw;
     }
     
@@ -239,7 +248,8 @@ section{
         display: inline-block;
     }
 }
-   
+
+
 
 #tecnologia{
 
@@ -260,7 +270,6 @@ section{
     align-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    
 
 }
 
@@ -289,9 +298,9 @@ section{
     .card-tec{
         width: 50%;
         flex: 0 0 30%;
-        margin-left: 0;
+
     }
-    #tecnologia .info{
+    .info{
         width: 50%;
         margin-right: 0;
     }
@@ -315,13 +324,15 @@ section{
 
 #projetos .cards{
     
-    width: 100%;
+    width: 90vw;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
+    gap: 2rem;
+    flex-wrap: nowrap;
 }
 
 .card{
@@ -330,16 +341,17 @@ section{
     background-color:#2A3A60;
     border-radius: 10px;
     box-shadow: black 0 0 10px;
+    flex-wrap: nowrap;
 }
 
-.cards:nth-child(2){
+.cards:nth-child(last){
     margin-top: 7rem;
-    
+    margin-right: 0rem;
 }
 
 .cards:last-child{
     margin-bottom: 7rem;
- 
+    margin-left: 0rem;
 }
 
 
@@ -372,14 +384,29 @@ section{
 @media screen and (min-width: 700px){
     
     .card{
-        width: 20vw;
+        width: 400px;
     }
     #projetos .cards{
-        flex-direction: row;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
-        flex-wrap: wrap;
+      
+        padding: 0;
+       
+       
+    }
+
+    .cards{
+        margin: 0 1rem;
     }
 }
+
+
 
 
 footer{
